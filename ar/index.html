@@ -1,59 +1,171 @@
 <!doctype html>
 <html>
-    <head>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-    </head>
 
-    <body style="margin: 0; overflow: hidden;">
-        <a-scene
-            vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
-            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-            id="scene"
-            embedded
-            gesture-detector
-        >
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
-                <a-image
-                    src="assets/asset.jpeg"
-                    scale="2 2 2"
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
-            </a-marker>
-                        <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker1.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
-                <a-image
-                    src="assets/asset1.png"
-                    scale="1 1 1"
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
-            </a-marker>
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script
+        src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+    <script
+        src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+</head>
 
-            <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false;" loading-screen="enabled: false;"
+        arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded gesture-detector>
+
+        <!--- マーカー -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+        
+        <!--- マーカー1 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker1.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset1.png" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー2 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker2.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset2.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー3 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker3.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset3.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー4 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker4.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset4.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー5 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker5.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset5.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー6 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker6.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset6.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー7 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker7.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset7.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー8 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker8.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset8.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー9 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker9.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset9.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー10 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker10.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset10.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー11 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker11.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset11.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー12 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker12.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset12.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー13 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker13.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset13.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー14 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker14.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset14.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー15 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker15.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset15.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー16 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker16.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset16.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー17 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker17.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset17.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー18 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker18.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset18.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー19 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker19.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset19.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー20 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker20.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset20.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー21 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker21.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset21.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー22 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker22.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset22.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー23 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker23.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset23.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <!--- マーカー24 -->
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker24.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+            <a-image src="assets/asset24.jpeg" scale="1 1 1" class="clickable" rotation="0 0 0" gesture-handler></a-image>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
 </html>
